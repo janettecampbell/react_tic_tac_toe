@@ -1,22 +1,26 @@
 import Square from "./Square";
 
 const Board = () => {
+  const renderSquare = (i) => {
+    return <Square value={i} />;
+  };
+
   return (
     <div>
       <div className="board-row">
-        <Square num="0" />
-        <Square num="1" />
-        <Square num="2" />
+        {renderSquare(0)}
+        {renderSquare(1)}
+        {renderSquare(2)}
       </div>
       <div className="board-row">
-        <Square num="3" />
-        <Square num="4" />
-        <Square num="5" />
+        {renderSquare(3)}
+        {renderSquare(4)}
+        {renderSquare(5)}
       </div>
       <div className="board-row">
-        <Square num="6" />
-        <Square num="7" />
-        <Square num="8" />
+        {renderSquare(6)}
+        {renderSquare(7)}
+        {renderSquare(8)}
       </div>
     </div>
   );
