@@ -1,11 +1,25 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
+  background-color: bisque;
 }
 
 ol,
 ul {
   padding-left: 30px;
+}
+
+.header {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.board {
+  text-align: center;
+  padding: 0 29vw;
+}
+
+.board-row {
 }
 
 .board-row:after {
@@ -16,21 +30,25 @@ ul {
 
 .status {
   margin-bottom: 10px;
+  text-align: center;
+  font-size: 3rem;
 }
 
 .square {
-  background: #fff;
+  /* background: #fff; */
+  background-image: url(./img/bg-wood.jpg);
+  color: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 12rem;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 12vw;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 12vw;
 }
 
 .square:focus {
